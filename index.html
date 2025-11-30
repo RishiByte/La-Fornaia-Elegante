@@ -3,23 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LA FORNINA ELEGANTE</title>
+    <title>LA FORNAIA ELEGANTE</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
 </head>
 <body>
     <!-- Nav Bar -->
-   <header>
-        <nav class="NavBar">
-            <a class="Nav-Title" href="index.html">
-                <img src="Media/logo.jpeg" alt="LA FORNINA ELEGANTE Logo" width="100" height="100">
+<header>
+        <nav class="navbar">
+            <a href="index.html" class="logo-section">
+                <img src="Images/logo.jpeg" alt="LA FORNAIA ELEGANTE Logo" class="logo">
+                <span class="brand-name">LA FORNAIA ELEGANTE</span>
             </a>
-            <a class="Nav-Title" href="index.html">Home</a>
-            <a class="Nav-Title" href="about.html">About Us</a>
-            <a class="Nav-Title" href="menu.html">Menu</a>
-            <a class="Nav-Title" href="contact.html">Contact</a>
-            <a><img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="cart"></a>
+
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="cart-wrapper">
+                    <a href="cart.html">
+                        <img src="https://www.svgrepo.com/show/533043/cart-shopping.svg" alt="Shopping Cart" class="cart-icon">
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
         </nav>
-    </header> 
+    </header>
 
     <!--First Page-->
     <div class="First-Page">
@@ -61,5 +77,6 @@
     <Footer class="Footer">
         
     </Footer>
+    <script src="script.js"></script>
 </body>
 </html>
